@@ -145,7 +145,7 @@ ON s.student_id = m.student_id
 GROUP BY s.department;
 
 -- =========================================
--- TOP PERFORMING DEPARTMENT
+-- TOP PERFORMING DEPARTMENT LIST    
 -- =========================================
 SELECT
     s.department,
@@ -155,5 +155,6 @@ JOIN marks m
 ON s.student_id = m.student_id
 GROUP BY s.department
 ORDER BY average_marks DESC
-LIMIT 1;
+;
+
 
